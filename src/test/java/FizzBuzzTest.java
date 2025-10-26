@@ -11,9 +11,11 @@ public class FizzBuzzTest {
         assertNotNull(fizzBuzz);
     }
 
-
-
-
+    @Test
+    public void shouldReturnFizzWhenInputIsDivisibleBy3() {
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        assertEquals("Fizz", fizzBuzz.calculate(3));
+    }
 }
 
 
