@@ -16,6 +16,12 @@ public class FizzBuzzTest {
         FizzBuzz fizzBuzz = new FizzBuzz();
         assertEquals("Fizz", fizzBuzz.calculate(3));
     }
+
+    @Test
+    public void shouldReturnBuzzWhenInputIsDivisibleBy5() {
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        assertEquals("Buzz", fizzBuzz.calculate(5));
+    }
 }
 
 
