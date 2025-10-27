@@ -28,6 +28,12 @@ public class FizzBuzzTest {
         FizzBuzz fizzBuzz = new FizzBuzz();
         assertEquals("FizzBuzz", fizzBuzz.calculate(15));
     }
+
+    @Test
+    public void shouldReturnIntegerWhenInputIsNotDivisibleBy3Or5() {
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        assertEquals("2", fizzBuzz.calculate(2));
+    }
 }
 
 
